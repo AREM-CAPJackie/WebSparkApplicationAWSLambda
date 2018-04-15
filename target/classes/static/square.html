@@ -23,7 +23,7 @@
 
     </head>
 
-    <body id="page-top">
+    <body id="page-top" onload="SquareControllerModule.loadResponse()">
 
         <!-- Navigation -->
         <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
@@ -56,7 +56,7 @@
                     <div class="row">
                         <div class="col-lg-8 mx-auto">
                             <h1 class="brand-heading">Response:</h1>
-                            <p id="response"> </p>
+                            <h3 id="response"> </h3>
                             <a href="#about" class="btn btn-circle js-scroll-trigger">
                                 <i class="fa fa-angle-double-down animated"></i>
                             </a>
@@ -108,6 +108,8 @@
                 <p>Open source basic REST API example using Spark</p>
             </div>
         </footer>
+		
+		<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 
         <!-- Bootstrap core JavaScript -->
         <script src="vendor/jquery/jquery.min.js"></script>

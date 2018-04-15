@@ -53,7 +53,7 @@
                     <div class="row">
                         <div class="col-lg-8 mx-auto">
                             <h1 class="brand-heading">Square REST API</h1>
-                            Number: <input type="number" id="value"><input type="submit" value="Submit" onclick="SquareControllerModule.loadResponse()"><br>
+                            Number: <input type="number" id="value"><input type="submit" value="Submit" onclick="location.href='/square.html?value='+document.getElementById('value').value;"><br>
                             <a href="#about" class="btn btn-circle js-scroll-trigger">
                                 <i class="fa fa-angle-double-down animated"></i>
                             </a>
@@ -105,6 +105,8 @@
                 <p>Open source basic REST API example using Spark</p>
             </div>
         </footer>
+		
+		<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 
         <!-- Bootstrap core JavaScript -->
         <script src="vendor/jquery/jquery.min.js"></script>
